@@ -3,7 +3,7 @@
 Instructions
 -------
 
-*
+* `git clone https://github.com/CharlyMannion/rps-solo`
 
 Task
 ----
