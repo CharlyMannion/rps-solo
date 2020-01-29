@@ -2,7 +2,7 @@ require 'sinatra/base'
 
 class Rps < Sinatra::Base
   get '/' do
-    'Rock, Paper, Scissor!'
+    'Rock, Paper, Scissors!'
   end
 
   # start the server if ruby file executed directly
