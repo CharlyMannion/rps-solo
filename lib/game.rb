@@ -3,7 +3,7 @@ require_relative 'computer_player'
 
 class Game
   WEAPONS = ["rock", "paper", "scissors"]
-  attr_reader :player, :computer_player, :weapons
+  attr_reader :player, :computer_player, :weapons, :player_result
 
   def self.create
     @game = Game.new
@@ -17,5 +17,6 @@ class Game
     @player = player
     @computer_player = computer_player
     @weapons = WEAPONS
+    @player_result
   end
 end

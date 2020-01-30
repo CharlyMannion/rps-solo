@@ -13,6 +13,9 @@ describe Game do
     it 'should have a computer plater' do
       expect(game.computer_player). to be_a ComputerPlayer
     end
+    it 'should have an undetermined result for the player' do
+      expect(game.player_result).to eq(nil)
+    end
   end
 
   describe '#weapons' do
@@ -20,4 +23,6 @@ describe Game do
       expect(game.weapons).to eq(WEAPONS)
     end
   end
+
+  describe '#'
 end
