@@ -10,6 +10,9 @@ describe Game do
     it 'should have an instance of the player class' do
       expect(game.player).to be_a Player
     end
+    it 'should have a computer plater' do
+      expect(game.computer_player). to be_a ComputerPlayer
+    end
   end
 
   describe '#weapons' do
