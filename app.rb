@@ -4,7 +4,8 @@ class Rps < Sinatra::Base
   enable :sessions
 
   get '/choose_weapon' do
-    'Choose your weapon!'
+    erb :choose_weapon
+    # 'Choose your weapon!'
   end
 
   # start the server if ruby file executed directly
