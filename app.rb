@@ -5,7 +5,10 @@ class Rps < Sinatra::Base
 
   get '/choose_weapon' do
     erb :choose_weapon
-    # 'Choose your weapon!'
+  end
+
+  post '/result' do
+    erb :result
   end
 
   # start the server if ruby file executed directly
