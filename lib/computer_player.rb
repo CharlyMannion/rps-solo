@@ -1,7 +1,8 @@
 class ComputerPlayer
+  WEAPONS = ["rock", "paper", "scissors"]
 
   def weapon
     WEAPONS.sample
   end
-  
+
 end

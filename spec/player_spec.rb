@@ -8,8 +8,8 @@ describe Player do
       test_player.choose_weapon("rock")
       expect(test_player.weapon).to eq("rock")
     end
-    # it 'should raise an error if the weapon is not rock, paper or scissors' do
-    #   expect { test_player.choose_weapon("glue") }.to raise_error "Not a possible weapon"
-    # end
+    it 'should raise an error if the weapon is not rock, paper or scissors' do
+      expect { test_player.choose_weapon("glue") }.to raise_error "Not a possible weapon"
+    end
   end
 end
