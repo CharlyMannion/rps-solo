@@ -1,5 +1,6 @@
 require 'game'
 require 'player'
+require 'computer_player'
 
 describe Game do
   subject(:game) { Game.new }
