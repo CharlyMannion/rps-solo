@@ -8,6 +8,7 @@ class Rps < Sinatra::Base
   end
 
   post '/result' do
+    p params
     erb :result
   end
 
