@@ -4,7 +4,7 @@ require 'computer_player'
 
 describe Game do
   subject(:game) { Game.new }
-  WEAPONS = [:rock, :paper, :scissors]
+  WEAPONS = ["rock", "paper", "scissors"]
 
   describe '#initialize' do
     it 'should have an instance of the player class' do
