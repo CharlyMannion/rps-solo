@@ -1,8 +1,10 @@
 require 'sinatra/base'
 
 class Rps < Sinatra::Base
-  get '/' do
-    'Rock, Paper, Scissors!'
+  enable :sessions
+
+  get '/choose_weapon' do
+    'Choose your weapon!'
   end
 
   # start the server if ruby file executed directly
