@@ -19,4 +19,26 @@ class Game
     @weapons = WEAPONS
     @player_result
   end
+
+  def evaluate
+    if draw? then @player_result = "drew"
+    elsif win? then @player_result = "win"
+    else @player_result = "lose"
+    end
+  end
+
+  private
+  def draw?
+    @player.weapon == @computer_player.weapon
+  end
+
+  def win?
+    if @player.weapon == "rock" && @computer_player.weapon == "scissors"
+      true
+    elsif @player.weapon == "paper" && @computer_player.weapon == "rock"
+      true
+    elsif @player.weapon == "scissors" && @computer_player.weapon == "paper"
+      true
+    end
+  end
 end

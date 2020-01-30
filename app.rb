@@ -17,6 +17,7 @@ class Rps < Sinatra::Base
     user_weapon = params[:user_choice]
     @game = Game.create
     @game.player.choose_weapon(user_weapon)
+    @game.evaluate
     erb :result
   end
 
