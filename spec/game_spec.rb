@@ -5,9 +5,9 @@ require 'computer_player'
 describe Game do
   subject(:game) { Game.new }
   let(:test_player) { double :player, weapon: "rock" }
-  let(:test_comp) { double :computer_player, weapon: "rock" }
-  let(:scissors_comp) { double :computer_player, weapon: "scissors" }
-  let(:paper_comp) { double :computer_player, weapon: "paper" }
+  let(:test_comp) { double :computer_player, chosen_weapon: "rock" }
+  let(:scissors_comp) { double :computer_player, chosen_weapon: "scissors" }
+  let(:paper_comp) { double :computer_player, chosen_weapon: "paper" }
   subject(:drawn_game) { Game.new(test_player, test_comp) }
   subject(:won_game) { Game.new(test_player, scissors_comp) }
   subject(:lost_game) { Game.new(test_player, paper_comp) }

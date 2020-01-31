@@ -1,7 +1,12 @@
 class ComputerPlayer
+  attr_reader :chosen_weapon
 
-  def weapon
-    Game::WEAPONS.sample
+  def initialize
+    @chosen_weapon
+  end
+
+  def choose_weapon
+    @chosen_weapon = Game::WEAPONS.sample
   end
 
 end

@@ -29,15 +29,15 @@ class Game
 
   private
   def draw?
-    @player.weapon == @computer_player.weapon
+    @player.weapon == @computer_player.chosen_weapon
   end
 
   def win?
-    if @player.weapon == "rock" && @computer_player.weapon == "scissors"
+    if @player.weapon == "rock" && @computer_player.chosen_weapon == "scissors"
       true
-    elsif @player.weapon == "paper" && @computer_player.weapon == "rock"
+    elsif @player.weapon == "paper" && @computer_player.chosen_weapon == "rock"
       true
-    elsif @player.weapon == "scissors" && @computer_player.weapon == "paper"
+    elsif @player.weapon == "scissors" && @computer_player.chosen_weapon == "paper"
       true
     end
   end
