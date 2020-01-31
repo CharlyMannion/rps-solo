@@ -1,8 +1,6 @@
 feature 'User chooses rock as a weapon' do
   before do
-    visit('/choose_weapon')
-    fill_in 'user_choice', with: 'rock'
-    click_button "Submit"
+    sign_in_choose_rock
   end
   scenario 'choosing rock' do
     expect(page).to have_content('You chose rock')
