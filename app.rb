@@ -4,9 +4,9 @@ require 'sinatra/base'
 class Rps < Sinatra::Base
   enable :sessions
 
-  before do
-    @game = Game.instance
-  end
+  # before do
+  #   @game = Game.instance
+  # end
 
   get '/choose_weapon' do
     erb :choose_weapon
@@ -17,7 +17,7 @@ class Rps < Sinatra::Base
     user_weapon = params[:user_choice]
     @game = Game.create
     @game.player.choose_weapon(user_weapon)
-    @game.evaluate
+    # @game.evaluate
     erb :result
   end
 
