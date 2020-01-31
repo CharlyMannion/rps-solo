@@ -3,3 +3,7 @@
 <h2>The computer chose <%= @game.computer_player.choose_weapon %></h2>
 <div>
 <h1>You <%= @game.evaluate %></h1>
+<form class="" action="/choose_weapon" method="get">
+  <h3>Play again?</h3>
+  <input type="submit" name="" value="Play Again">
+</form>
